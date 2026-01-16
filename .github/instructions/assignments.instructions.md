@@ -25,3 +25,6 @@ Os cabeçalhos das seções devem refletir a estrutura no template, incluindo o 
    - Forneça exemplo de entrada/saída em blocos de código se útil.
 
 Não inclua seções extras a menos que explicitamente especificado.
+
+## 3. Formatação
+Os textos gerados sempre devem ser em português do Brasil - PT-BR.

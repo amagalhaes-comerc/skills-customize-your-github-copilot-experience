@@ -1,48 +1,48 @@
-# 📘 Assignment: Games in Python
+# 📘 Tarefa: Jogos em Python
 
-## 🎯 Objective
+## 🎯 Objetivo
 
-Build a classic Hangman game to practice string manipulation, loops, conditionals, and basic user input handling in Python.
+Construir o clássico jogo da Forca para praticar manipulação de strings, loops, condicionais e entrada de usuário em Python.
 
-## 📝 Tasks
+## 📝 Tarefas
 
-### 🛠️ Core Hangman (CLI)
+### 🛠️ Forca (CLI) Básico
 
-#### Description
-Create a command-line Hangman game that chooses a random word from a predefined list and lets the player guess one letter at a time until they either reveal the word or run out of attempts.
+#### Descrição
+Crie um jogo da Forca no terminal que escolhe uma palavra aleatória de uma lista predefinida e permite ao jogador adivinhar uma letra por vez até revelar a palavra ou esgotar as tentativas.
 
-#### Requirements
-Completed program should:
+#### Requisitos
+Programa concluído deve:
 
-- Store a list of at least 10 candidate words and randomly select one (e.g., using `random.choice`).
-- Display the current progress using underscores for hidden letters (e.g., `_ _ a _ _`).
-- Accept a single-letter guess per turn via `input()` and update the progress for correct guesses.
-- Track and display remaining incorrect attempts (suggested: 6 mistakes allowed).
-- Track and display letters already guessed.
-- End the game when the word is fully revealed (win) or attempts are exhausted (lose), and show the target word.
+- Manter uma lista com pelo menos 10 palavras e selecionar aleatoriamente uma (ex.: `random.choice`).
+- Exibir o progresso usando sublinhados para letras ocultas (ex.: `_ _ a _ _`).
+- Aceitar um palpite de uma única letra por turno via `input()` e atualizar o progresso nos acertos.
+- Controlar e exibir as tentativas incorretas restantes (sugerido: 6 erros permitidos).
+- Exibir letras já tentadas.
+- Encerrar quando a palavra for revelada (vitória) ou as tentativas acabarem (derrota), e mostrar a palavra alvo.
 
-Example interaction (simplified):
+Exemplo de interação (simplificado):
 
 ```
-_ _ _ _ _    Misses left: 6    Guessed: -
-Guess a letter: a
-_ a _ _ _    Misses left: 6    Guessed: a
-Guess a letter: e
-_ a _ _ _    Misses left: 5    Guessed: a, e
+_ _ _ _ _    Erros restantes: 6    Tentadas: -
+Adivinhe uma letra: a
+_ a _ _ _    Erros restantes: 6    Tentadas: a
+Adivinhe uma letra: e
+_ a _ _ _    Erros restantes: 5    Tentadas: a, e
 ...
-You win! The word was "magic".
+Você venceu! A palavra era "magic".
 ```
 
 
-### 🛠️ Polishing and Robustness
+### 🛠️ Aprimoramentos e Robustez
 
-#### Description
-Improve user experience and reliability with input validation and quality-of-life features.
+#### Descrição
+Melhore a experiência do usuário e a confiabilidade com validação de entrada e recursos de qualidade de vida.
 
-#### Requirements
-Completed program should:
+#### Requisitos
+Programa concluído deve:
 
-- Treat guesses case-insensitively (e.g., `A` equals `a`).
-- Validate input: accept only a single alphabetic character; prompt again otherwise.
-- Handle repeated guesses gracefully without penalizing the player; notify that the letter was already tried.
-- Ask the player if they want to play again when a round ends and restart without exiting the program.
+- Tratar palpites de forma case-insensível (ex.: `A` igual a `a`).
+- Validar entrada: aceitar apenas um único caractere alfabético; solicitar novamente caso contrário.
+- Lidar com palpites repetidos sem penalizar; avisar que a letra já foi tentada.
+- Perguntar se deseja jogar novamente quando a rodada terminar e reiniciar sem encerrar o programa.
